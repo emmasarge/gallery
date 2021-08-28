@@ -1,0 +1,255 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "12pp23",
+            "name": "Elsa",
+            "description": "Dimensions: 24in x 28in Material: Oil on paper by E.Sarge, this piece is based off a character in Henry Miller's 'Tropic of Cancer'",
+            "original_price": 500.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/elsa.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "13pp23",
+            "name": "Flowers",
+            "description": "Dimensions: 28in x 32in Material: Acrylic on Canvas by E.Sarge, this piece is based off dutch floral paintings",
+            "original_price": 800.00,
+            "print_price": 120.00,
+            "category": 2,
+            "rating": 4.5,
+            "image": "images/fliwer.jpeg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "12p3p23",
+            "name": "Fruit Bowl",
+            "description": "Dimensions: 24in x 28in Material: Acrylic on canvas by E.Sarge",
+            "original_price": 500.00,
+            "print_price": 120.00,
+            "category": 2,
+            "rating": 5,
+            "image": "images/elsa.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "17pp23",
+            "name": "Nude",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/nude.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "16pp23",
+            "name": "Nude II",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/nude2.jpeg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "19pp23",
+            "name": "Nude III",
+            "description": "Dimensions: 40in x 44in Material: Oil on Canvas by E.Sarge",
+            "original_price": 900.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/matisse.jpeg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "18pp23",
+            "name": "War",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 3,
+            "rating": 4,
+            "image": "images/war.jpeg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "17qp23",
+            "name": "Ghost",
+            "description": "Dimensions: 20in x 24in Material: Acrylic Collage by E.Sarge",
+            "original_price": 600.00,
+            "print_price": 120.00,
+            "category": 3,
+            "rating": 5,
+            "image": "images/ghost.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "17pi23",
+            "name": "Fruit",
+            "description": "Dimensions: 20in x 28in Material: Oil on Canvas by E.Sarge",
+            "original_price": 500.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 4,
+            "image": "images/fruit.jpeg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "17pr23",
+            "name": "Movement",
+            "description": "Dimensions: 18in x 22in Material: Oil on Paper by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/dancers.jpeg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p423",
+            "name": "Marshes",
+            "description": "Dimensions: 24in x 20in Material: Oil on Board by E.Sarge",
+            "original_price": 800.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/boats.jpeg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "178p23",
+            "name": "Nude II",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 4,
+            "rating": 5,
+            "image": "images/nude2.jpeg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "17pp23",
+            "name": "Nude II",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/nude2.jpeg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "175p23",
+            "name": "Camouflage",
+            "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 400.00,
+            "print_price": 120.00,
+            "category": 4,
+            "rating": 3,
+            "image": "images/dad.jpeg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "17gp23",
+            "name": "Desert",
+            "description": "Dimensions: 80in x 90in Material: Mixed Media on Canvas by E.Sarge",
+            "original_price": 1500.00,
+            "print_price": 120.00,
+            "category": 4,
+            "rating": 5,
+            "image": "images/desert.png"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p823",
+            "name": "Chicken Feed",
+            "description": "Dimensions: 50in x 58in Material: Oil on Canvas by E.Sarge",
+            "original_price": 900.00,
+            "print_price": 120.00,
+            "category": 3,
+            "rating": 5,
+            "image": "images/chicken.jpeg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "17rp23",
+            "name": "Destruciton",
+            "description": "Dimensions: 70in x 74in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 1200.00,
+            "print_price": 120.00,
+            "category": 4,
+            "rating": 4,
+            "image": "images/destruction.jpeg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "17pp23",
+            "name": "Pope",
+            "description": "Dimensions: 28in x 32in Material: Acrylic on Canvas by E.Sarge",
+            "original_price": 700.00,
+            "print_price": 120.00,
+            "category": 1,
+            "rating": 5,
+            "image": "images/pope.jpeg"
+        }
+    }
+
+]
