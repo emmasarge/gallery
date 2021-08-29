@@ -21,7 +21,7 @@
             "price": 800.00,
             "category": 2,
             "rating": 4.5,
-            "image": "media/images/fliwer.jpeg"
+            "image": "/media/images/fliwer.jpeg"
         }
     },
     {
@@ -124,8 +124,8 @@
             "description": "Dimensions: 18in x 22in Material: Oil on Paper by E.Sarge",
             "price": 700.00,
             "category": 1,
-            "rating": 5,
-            "image": "images/dancers.png"
+            "rating": 3,
+            "image": "media/images/dancers.png"
         }
     },
     {
