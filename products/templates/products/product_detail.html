@@ -43,10 +43,22 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
-                    <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+                    <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            {% with product.has_sizes as s %}
+                            {% if s %}
+                                <div class="col-12">
+                                    <p><strong>Availabe Special Edition Print Sizes:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                        <option value="s">24in x 28in</option>
+                                        <option value="m" selected>32in x 36in</option>
+                                        <option value="l">44in x 50in</option>
+                                    </select>
+                                </div>
+                            {% endif %}
                             <div class="col-12">
+                                <p class="pt-3"><em>* for a limited time, prints are available with proceeds going to Breast Cancer Research</em></p>
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -55,7 +67,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
@@ -65,6 +77,7 @@
                                 <input type="submit" class="btn rounded-0 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% endwith %}
                         </div>
                     </form>
                 </div>
