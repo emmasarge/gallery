@@ -1,0 +1,1 @@
+the GALLERY Confirmation for Order Number {{ order.order_number }}
