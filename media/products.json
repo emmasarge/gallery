@@ -8,7 +8,7 @@
             "price": 500.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/elsa.jpg"
+            "image": "media/elsa.jpg"
         }
     },
     {
@@ -21,7 +21,7 @@
             "price": 800.00,
             "category": 2,
             "rating": 4.5,
-            "image": "/media/images/fliwer.jpeg"
+            "image": "media/fliwer.jpeg"
         }
     },
     {
@@ -34,7 +34,7 @@
             "price": 500.00,
             "category": 2,
             "rating": 5,
-            "image": "media/images/bowl.jpeg"
+            "image": "media/bowl.jpeg"
         }
     },
     {
@@ -47,7 +47,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/nude.png"
+            "image": "media/nude.png"
         }
     },
     {
@@ -60,7 +60,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/nude2.jpeg"
+            "image": "media/nude2.jpeg"
         }
     },
     {
@@ -73,7 +73,7 @@
             "price": 900.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/matisse.jpeg"
+            "image": "media/matisse.jpeg"
         }
     },
     {
@@ -86,7 +86,7 @@
             "price": 700.00,
             "category": 3,
             "rating": 4,
-            "image": "media/images/war.jpeg"
+            "image": "media/war.jpeg"
         }
     },
     {
@@ -99,7 +99,7 @@
             "price": 600.00,
             "category": 3,
             "rating": 5,
-            "image": "media/images/ghost.jpg"
+            "image": "media/ghost.jpg"
         }
     },
     {
@@ -112,7 +112,7 @@
             "price": 500.00,
             "category": 1,
             "rating": 4,
-            "image": "media/images/fruit.jpeg"
+            "image": "media/fruit.jpeg"
         }
     },
     {
@@ -125,7 +125,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 3,
-            "image": "media/images/dancers.png"
+            "image": "media/dancers.png"
         }
     },
     {
@@ -138,7 +138,7 @@
             "price": 800.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/boats.jpeg"
+            "image": "media/boats.jpeg"
         }
     },
     {
@@ -151,7 +151,7 @@
             "price": 700.00,
             "category": 4,
             "rating": 5,
-            "image": "media/images/nude2.jpeg"
+            "image": "media/nude2.jpeg"
         }
     },
     {
@@ -164,7 +164,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "media/images/nude2.jpeg"
+            "image": "media/nude2.jpeg"
         }
     },
     {
@@ -177,7 +177,7 @@
             "price": 400.00,
             "category": 4,
             "rating": 3,
-            "image": "media/images/dad.jpeg"
+            "image": "media/dad.jpeg"
         }
     },
     {
@@ -190,7 +190,7 @@
             "price": 1500.00,
             "category": 4,
             "rating": 5,
-            "image": "media/images/desert.png"
+            "image": "media/desert.png"
         }
     },
     {
@@ -203,7 +203,7 @@
             "price": 900.00,
             "category": 3,
             "rating": 5,
-            "image": "images/chicken.jpeg"
+            "image": "media/chicken.jpeg"
         }
     },
     {
@@ -216,7 +216,7 @@
             "price": 1200.00,
             "category": 4,
             "rating": 4,
-            "image": "images/destruction.jpeg"
+            "image": "media/destruction.jpeg"
         }
     },
     {
@@ -229,7 +229,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "images/pope.jpeg"
+            "image": "media/pope.jpeg"
         }
     }
 
