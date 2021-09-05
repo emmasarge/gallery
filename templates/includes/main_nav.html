@@ -30,10 +30,9 @@
                 Drawings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Exhibition</a>
-                <a href="" class="dropdown-item">Archive</a>
-                <a href="" class="dropdown-item">All Paintings</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=exhibition" class="dropdown-item">Exhibition</a>
+                <a href="{% url 'products' %}?category=archive" class="dropdown-item">Archive</a>
             </div>
         </li>
     </ul>
