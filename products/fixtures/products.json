@@ -34,7 +34,7 @@
             "price": 500.00,
             "category": 2,
             "rating": 5,
-            "image": "images/bowl.jpeg"
+            "image": "media/images/bowl.jpeg"
         }
     },
     {
@@ -47,7 +47,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "images/nude.png"
+            "image": "media/images/nude.png"
         }
     },
     {
@@ -73,7 +73,7 @@
             "price": 900.00,
             "category": 1,
             "rating": 5,
-            "image": "images/matisse.jpeg"
+            "image": "media/images/matisse.jpeg"
         }
     },
     {
@@ -86,7 +86,7 @@
             "price": 700.00,
             "category": 3,
             "rating": 4,
-            "image": "images/war.jpeg"
+            "image": "media/images/war.jpeg"
         }
     },
     {
@@ -99,7 +99,7 @@
             "price": 600.00,
             "category": 3,
             "rating": 5,
-            "image": "images/ghost.jpg"
+            "image": "media/images/ghost.jpg"
         }
     },
     {
@@ -112,7 +112,7 @@
             "price": 500.00,
             "category": 1,
             "rating": 4,
-            "image": "images/fruit.jpeg"
+            "image": "media/images/fruit.jpeg"
         }
     },
     {
@@ -138,7 +138,7 @@
             "price": 800.00,
             "category": 1,
             "rating": 5,
-            "image": "images/boats.jpeg"
+            "image": "media/images/boats.jpeg"
         }
     },
     {
@@ -151,7 +151,7 @@
             "price": 700.00,
             "category": 4,
             "rating": 5,
-            "image": "images/nude2.jpeg"
+            "image": "media/images/nude2.jpeg"
         }
     },
     {
@@ -164,7 +164,7 @@
             "price": 700.00,
             "category": 1,
             "rating": 5,
-            "image": "images/nude2.jpeg"
+            "image": "media/images/nude2.jpeg"
         }
     },
     {
@@ -177,7 +177,7 @@
             "price": 400.00,
             "category": 4,
             "rating": 3,
-            "image": "images/dad.jpeg"
+            "image": "media/images/dad.jpeg"
         }
     },
     {
@@ -190,7 +190,7 @@
             "price": 1500.00,
             "category": 4,
             "rating": 5,
-            "image": "images/desert.png"
+            "image": "media/images/desert.png"
         }
     },
     {
