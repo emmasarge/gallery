@@ -265,8 +265,8 @@
             "sku": "17p8723",
             "name": "Cows",
             "description": "Dimensions: 400in x 500in Material: Pastel on Wood by E.Sarge. Jersery cow and calf for a restaurant based in Seattle.",
-            "price": 90000.00,
-            "category": 6,
+            "price": 9000.00,
+            "category": 5,
             "rating": 5,
             "image": "cows.jpeg"
         }
@@ -330,7 +330,7 @@
             "sku": "17p8723",
             "name": "Pig",
             "description": "Dimensions: 400in x 500in Material: Pastel on Wood by E.Sarge. Managlitsa Pig for a restaurant based in Seattle.",
-            "price": 90000.00,
+            "price": 9000.00,
             "category": 6,
             "rating": 4,
             "image": "pig.jpeg"
@@ -343,7 +343,7 @@
             "sku": "17p8723",
             "name": "Women",
             "description": "Dimensions: 20in x 22in Material: Drawing on paper by E.Sarge. Nude figurative study",
-            "price": 90000.00,
+            "price": 240.00,
             "category": 4,
             "rating": 5,
             "image": "women.jpeg"
