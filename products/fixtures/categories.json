@@ -207,7 +207,7 @@
         }
     },
     {
-        "pk": 17,
+        "pk": 27,
         "model": "products.category",
         "fields": {
             "name": "new_arrivals",
