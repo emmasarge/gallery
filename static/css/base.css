@@ -9,13 +9,23 @@ body {
     color: #555;
     font-family: 'Quattrocento Sans', sans-serif;
 }
-h1, h2, h3 {
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.navbar {
-    background-color: none;
+#topnav {
+    background-color: #fafafa;
 }
+.content {
+    transition: .8s ease-out;
+}
+.content.faded-in {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -253,7 +263,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #f2ba21; /* text-info */
 }
 
 /* Product Form */

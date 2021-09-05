@@ -84,7 +84,7 @@
             "name": "War",
             "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
             "price": 700.00,
-            "category": 3,
+            "category": 1,
             "rating": 4,
             "image": "war.jpeg"
         }
@@ -110,7 +110,7 @@
             "name": "Fruit",
             "description": "Dimensions: 20in x 28in Material: Oil on Canvas by E.Sarge",
             "price": 500.00,
-            "category": 1,
+            "category": 2,
             "rating": 4,
             "image": "fruit.jpeg"
         }
@@ -136,7 +136,7 @@
             "name": "Marshes",
             "description": "Dimensions: 24in x 20in Material: Oil on Board by E.Sarge",
             "price": 800.00,
-            "category": 1,
+            "category": 7,
             "rating": 5,
             "image": "boats.jpeg"
         }
@@ -149,7 +149,7 @@
             "name": "Nude II",
             "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
             "price": 700.00,
-            "category": 4,
+            "category": 1,
             "rating": 5,
             "image": "nude2.jpeg"
         }
@@ -175,7 +175,7 @@
             "name": "Camouflage",
             "description": "Dimensions: 30in x 34in Material: Acrylic on Canvas by E.Sarge",
             "price": 400.00,
-            "category": 4,
+            "category": 3,
             "rating": 3,
             "image": "dad.jpeg"
         }
@@ -188,7 +188,7 @@
             "name": "Desert",
             "description": "Dimensions: 80in x 90in Material: Mixed Media on Canvas by E.Sarge",
             "price": 1500.00,
-            "category": 4,
+            "category": 7,
             "rating": 5,
             "image": "desert.png"
         }
@@ -214,7 +214,7 @@
             "name": "Destruciton",
             "description": "Dimensions: 70in x 74in Material: Acrylic on Canvas by E.Sarge",
             "price": 1200.00,
-            "category": 4,
+            "category": 1,
             "rating": 4,
             "image": "destruction.jpeg"
         }
@@ -227,10 +227,128 @@
             "name": "Pope",
             "description": "Dimensions: 28in x 32in Material: Acrylic on Canvas by E.Sarge",
             "price": 700.00,
-            "category": 1,
+            "category": 3,
             "rating": 5,
             "image": "pope.jpeg"
         }
-    }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Bouquet",
+            "description": "Dimensions: 28in x 32in Material: Acrylic on Canvas by E.Sarge. Based on Dutch Masters, this painting adds color to any room. ",
+            "price": 700.00,
+            "category": 2,
+            "rating": 5,
+            "image": "bouquet.jpeg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Caught",
+            "description": "Dimensions: 22in x 24in Material: Watercolor on paper by E.Sarge. A figurative study. ",
+            "price": 700.00,
+            "category": 5,
+            "rating": 5,
+            "image": "caught.png"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Cows",
+            "description": "Dimensions: 400in x 500in Material: Pastel on Wood by E.Sarge. Jersery cow and calf for a restaurant based in Seattle.",
+            "price": 90000.00,
+            "category": 6,
+            "rating": 5,
+            "image": "cows.jpeg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "17678723",
+            "name": "Death",
+            "description": "Dimensions: 12in x 16in Material: Pastel on Paper by E.Sarge. Figure study.",
+            "price": 120.00,
+            "category": 6,
+            "rating": 5,
+            "image": "death.jpeg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Lover",
+            "description": "Dimensions: 12in x 16in Material: Pastel on Paperby E.Sarge. Symbol of lovers.",
+            "price": 120.00,
+            "category": 4,
+            "rating": 5,
+            "image": "lover.png"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "157p8723",
+            "name": "Lying",
+            "description": "Dimensions: 12in x 18in Material: Watercolor on paper by E.Sarge. Nude figure.",
+            "price": 200.00,
+            "category": 1,
+            "rating": 5,
+            "image": "lying.jpeg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Naked",
+            "description": "Dimensions: 20in x 24in Material: Drawing by E.Sarge. Figurative nude study.",
+            "price": 120.00,
+            "category": 1,
+            "rating": 4,
+            "image": "naked.jpeg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Pig",
+            "description": "Dimensions: 400in x 500in Material: Pastel on Wood by E.Sarge. Managlitsa Pig for a restaurant based in Seattle.",
+            "price": 90000.00,
+            "category": 6,
+            "rating": 4,
+            "image": "pig.jpeg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "17p8723",
+            "name": "Women",
+            "description": "Dimensions: 20in x 22in Material: Drawing on paper by E.Sarge. Nude figurative study",
+            "price": 90000.00,
+            "category": 4,
+            "rating": 5,
+            "image": "women.jpeg"
+        }
+    },
+    
 
 ]
