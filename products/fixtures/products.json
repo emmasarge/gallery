@@ -331,7 +331,7 @@
             "name": "Pig",
             "description": "Dimensions: 400in x 500in Material: Pastel on Wood by E.Sarge. Managlitsa Pig for a restaurant based in Seattle.",
             "price": 7000.00,
-            "category": 6,
+            "category": 9,
             "rating": 4,
             "image": "pig.jpeg"
         }
@@ -344,8 +344,8 @@
             "name": "Women",
             "description": "Dimensions: 20in x 22in Material: Drawing on paper by E.Sarge. Nude figurative study",
             "price": 240.00,
-            "category": 4,
-            "rating": 5,
+            "category": 8,
+            "rating": 6,
             "image": "women.jpeg"
         }
     }
