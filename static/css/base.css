@@ -30,12 +30,21 @@ h1 {
     transition: .8s ease-out;
 }
 .product-content.faded-in {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(1);
+    -ms-transform: translateY(1);
+    transform: translateY(1);
     opacity: 1;
 }
 
+.black-link a {
+    color: #343a40!important;
+    text-decoration: none;
+}
+
+.black-link a:hover{
+    color:black!important;
+    font-size: larger;
+}
 /* from Bulma */
 .icon {
     align-items: center;
