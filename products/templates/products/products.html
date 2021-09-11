@@ -161,7 +161,7 @@
             let windowHt = window.innerHeight;
             fadeElements.forEach(element => {
                 let elementPos = element.getBoundingClientRect().top;
-                if (elementPos <= windowHt / 1.3) {
+                if (elementPos <= windowHt / 1.7) {
                     element.classList.add('faded-in');
                 }
             });
