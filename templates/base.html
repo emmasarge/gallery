@@ -106,10 +106,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md- col-lg-3 my-auto py-1 py-lg-0 row ">
-                <button class="right btn pr-2 "><i class="far fa-user"></i></button>
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
+            <div class="container col-12 col-md- col-lg-3 my-auto py-1 py-lg-0  ">
+                <div class="d-inline"> <button class="right btn pr-2 "><i class="far fa-user"></i></button></div>
+               <div  class="d-inline">
+                <form method="GET" action="{% url 'products' %}" class="d-inline">
+                    <div class="input-group w-75">
                         <input class="form-control rounded-1" type="text" name="q" placeholder="Search collection">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black rounded-1" type="submit">
@@ -119,7 +120,7 @@
                             </button>
                         </div>
                     </div>
-                </form>
+                </form></div>
             </div>
 
         </div>
