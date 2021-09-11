@@ -43,7 +43,9 @@ h1 {
 
 .black-link a:hover{
     color:black!important;
-    font-size: larger;
+    font-size: large;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
 }
 /* from Bulma */
 .icon {
