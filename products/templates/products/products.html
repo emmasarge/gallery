@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid content lead mt-5 faded-in" >
+    <div class="container-fluid content lead mt-5 faded-in product-content faded-in" >
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Collection</h2>
@@ -53,7 +53,7 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0 product-content faded-in">
+                            <div class="card h-100 border-0 ">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
