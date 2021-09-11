@@ -18,14 +18,16 @@ h1 {
     background-color: #fafafa;
 }
 
+
 .content {
     transition: .8s ease-out;
 }
 
 .content.faded-in {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    transition: .10s ease-out;
+    -webkit-transform: translateY(1);
+    -ms-transform: translateY(1);
+    transform: translateY(1);
     opacity: 1;
 }
 
@@ -60,6 +62,38 @@ h1 {
 
 }
 
+#account {
+    font-size: 12px;
+}
+#cart {
+    font-size: 12px;
+}
+#home-page {
+    margin-top: 13rem!important;
+    background-color: #fafafa;
+    border-radius: 2px;
+    padding:10px;
+}
+
+#home-title h1 {
+    color: #0d1922 !important;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-left: 3rem;
+}
+
+#home-title a {
+    color: #0d1922 !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: lowercase;
+    margin-left: 3rem;
+}
+
+.arrow {
+    font-size: 1.5rem;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -362,14 +396,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 100px;
+        padding-top: 120x;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media (max-width: 980px) {
     .header-container {
-        padding-top: 100px;
+        padding-top: 116px;
     }
 
     body {
@@ -411,15 +445,28 @@ input[name='q']::placeholder {
 
     #home-title h1 {
         color: #0d1922 !important;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: auto;
+       
     }
-
+    
     #home-title a {
         color: #0d1922 !important;
         font-family: Georgia, 'Times New Roman', Times, serif !important;
+        font-weight: 200;
         font-size: 1rem;
-        margin-top: -auto;
         text-transform: lowercase;
+        
     }
+    #home-page {
+        margin-top: 8rem!important;
+        background-color: #fafafa;
+        border-radius: 2px;
+       
+    }
+
+    .arrow {
+        font-size: .75rem;
+    }
+
 }

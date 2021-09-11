@@ -37,3 +37,14 @@
        
     </ul>
 </div>
+{% block postloadjs %}
+
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").toggle();
+      });
+    });
+    </script>
+
+  {% endblock %}
