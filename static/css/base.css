@@ -26,6 +26,16 @@ h1 {
     opacity: 1;
 }
 
+.product-content {
+    transition: .8s ease-out;
+}
+.product-content.faded-in {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
