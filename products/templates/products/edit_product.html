@@ -1,29 +1,32 @@
-% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container hdr-container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container mt-5 mb-5 container-pad">
         <div class="row">
             <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Edit a Product</h5>
+                <!-- edit a product header and message -->
+                <h2 class="fw-bold mb-4 display-6">Product Management</h2>
+                <h6 class="text-muted">Edit a Product</h6>
                 <hr>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                <!-- edit a product form -->
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-3" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -32,21 +35,23 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update Product</button>
+                    <!-- edit a product buttons and cancel btns -->
+                    <div class="inline-flex-pos float-end">
+                        <a class="btn rounded-2 btn-outline-dark py-2" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn text-capitalize py-2 btn-text btn-bg-col" type="submit">Update Product</button>
                     </div>
                 </form>
-            </div>            
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
+    <script>
+        // jshint esversion: 6
+        $('#id_image').change(function(){
+            var file = $('#id_image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>
