@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid content lead mt-5 faded-in product-content faded-in" >
+    <div class="container-fluid content lead mt-5 faded-in faded-in" >
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Collection</h2>
@@ -53,7 +53,7 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0 ">
+                            <div class="card h-100 border-0 img-hover content">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
@@ -66,7 +66,7 @@
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="card-footer bg-white pt-0 border-0 text-left content" >
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
@@ -154,20 +154,5 @@
                 window.location.replace(currentUrl);
             }
         })
-
-        const fadeElements = document.querySelectorAll('.product-content');
-
-        function scrollAnim() {
-            let windowHt = window.innerHeight;
-            fadeElements.forEach(element => {
-                let elementPos = element.getBoundingClientRect().top;
-                if (elementPos <= windowHt / 1.7) {
-                    element.classList.add('faded-in');
-                }
-            });
-        }
-        document.addEventListener('DOMContentLoaded', scrollAnim);
-        window.addEventListener('scroll', scrollAnim);
-    
     </script>
 {% endblock %}

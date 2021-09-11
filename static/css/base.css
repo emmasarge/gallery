@@ -3,12 +3,13 @@ html {
 }
 
 body {
-    background: linear-gradient( rgba(233, 230, 221, 0.6), rgba(233, 230, 221, 0.7) ),url('/media/elsa.jpeg') no-repeat center center fixed;
+    background: linear-gradient(rgba(233, 230, 221, 0.4), rgba(233, 230, 221, 0.3)), url('/media/elsa.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Quattrocento Sans', sans-serif;
 }
+
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -16,9 +17,11 @@ h1 {
 #topnav {
     background-color: #fafafa;
 }
+
 .content {
     transition: .8s ease-out;
 }
+
 .content.faded-in {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -29,6 +32,7 @@ h1 {
 .product-content {
     transition: .8s ease-out;
 }
+
 .product-content.faded-in {
     -webkit-transform: translateY(1);
     -ms-transform: translateY(1);
@@ -37,30 +41,48 @@ h1 {
 }
 
 .black-link a {
-    color: #343a40!important;
+    color: #343a40 !important;
     text-decoration: none;
 }
 
-.black-link a:hover{
-    color:black!important;
+.black-link a:hover {
+    color: black !important;
     font-size: large;
     transition: 0.5s;
     transition-timing-function: ease-out;
 }
+
+.img-hover:hover {
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+    -ms-transform: translate(-2px, -8px);
+    transform: translate(-2px, -8px);
+
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: .75rem;
+    width: .75rem;
 }
 
 .logo-font {
     text-transform: uppercase;
 }
+
 .menu-font {
-    font-style: light;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.menu-font:hover {
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+    -ms-transform: translate(-1px, -3px);
+    transform: translate(-1px, -3px);
 }
 
 .main-logo-link {
@@ -80,7 +102,7 @@ h1 {
 
 .btn-outline-black {
     background: white;
-    color: #0d1922 !important; /* use important to override link colors for <a> elements */
+    color: #0d1922 !important;
     border: 1px solid #0d1922;
 }
 
@@ -106,6 +128,16 @@ h1 {
     color: #0d1922 !important;
 }
 
+.text-mustard {
+    color: #ce9c1e;
+}
+
+.text-mustard:hover {
+    color: #b7671d !important;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
 .border-black {
     border: 1px solid #0d1922 !important;
 }
@@ -115,16 +147,16 @@ h1 {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #fafafa;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fafafa;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -144,21 +176,23 @@ a.category-badge > span.badge:hover {
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #fafafa;
 }
 
 #home-title h1 {
-    color: #0d1922!important;
+    color: #0d1922 !important;
     font-size: 9rem;
-    margin-top:350px;
+    margin-top: 350px;
 }
+
 #home-title a {
-    color: #0d1922!important;
-    font-family: Georgia, 'Times New Roman', Times, serif!important;
+    color: #0d1922 !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-size: 2rem;
     margin-top: -30px;
     text-transform: lowercase;
 }
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -178,10 +212,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ from boutique ado*/
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid #0d1922;
     position: absolute;
     top: -10px;
@@ -221,26 +255,23 @@ input[name='q']::placeholder {
     border-bottom-color: #343a40 !important;
 }
 
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -258,8 +289,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -276,18 +307,19 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #f2ba21; /* text-info */
+    color: #f2ba21;
+    /* text-info */
 }
 
 /* Product Form */
@@ -326,18 +358,18 @@ input[name='q']::placeholder {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
+        z-index: 1000;
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 100px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 100px;
     }
 
     body {
@@ -361,10 +393,6 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
-
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
@@ -376,19 +404,22 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
     #home-title h1 {
-        color: #0d1922!important;
+        color: #0d1922 !important;
         font-size: 2rem;
-        margin-top:auto;
+        margin-top: auto;
     }
+
     #home-title a {
-        color: #0d1922!important;
-        font-family: Georgia, 'Times New Roman', Times, serif!important;
+        color: #0d1922 !important;
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
         font-size: 1rem;
         margin-top: -auto;
         text-transform: lowercase;
-}
+    }
 }
