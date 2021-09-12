@@ -50,21 +50,21 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex ">
-            <div class="col-12 col-md-3 col-lg-3 my-auto py-1 py-lg-0" >
-                 <form method="GET" action="{% url 'products' %}" class="d-inline">
-                     <div class="input-group w-75">
-                         <input class="form-control rounded-0" type="text" name="q" placeholder="Search collection">
-                         <div class="input-group-append">
-                             <button class="form-control btn btn-black rounded-0" type="submit">
-                                 <span class="icon">
-                                     <i class="fas fa-search"></i>
-                                 </span>
-                             </button>
-                         </div>
-                     </div>
-                 </form>
-             </div>
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-md-3 col-lg-3 my-auto py-1 py-lg-0">
+                <form method="GET" action="{% url 'products' %}" class="d-inline">
+                    <div class="input-group w-75">
+                        <input class="form-control rounded-0" type="text" name="q" placeholder="Search collection">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <div class=" col-12 col-md-6 col-lg-6 mt-40 py-1 py-lg-0 mx-auto">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto pt-4">
                     <h2 class="logo-font text-black my-0">Gallery</h2>
@@ -111,37 +111,34 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 my-auto pt-2 py-lg-0 px-0">
-                <nav class="navbar navbar-expand-lg w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    {% include 'includes/mobile_top_header.html' %}
-                    {% include 'includes/main_nav.html' %}
-                </nav>
-            </div>
         </div>
-
-
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile_top_header.html' %}
+                {% include 'includes/main_nav.html' %}
+            </nav>
+        </div>
     </header>
 
     {% if messages %}
-    <div class="message-container">
-        {% for message in messages %}
-        {% with message.level as level %}
-        {% if level == 40 %}
-        {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-        {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-        {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-        {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-        {% endwith %}
-        {% endfor %}
-    </div>
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% block page_header %}
@@ -153,28 +150,11 @@
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
-
-
-        const fadeElements = document.querySelectorAll('.content');
-
-        function scrollAnim() {
-            let windowHt = window.innerHeight;
-            fadeElements.forEach(element => {
-                let elementPos = element.getBoundingClientRect().top;
-                if (elementPos <= windowHt / 1.3) {
-                    element.classList.add('faded-in');
-                }
-            });
-        }
-        document.addEventListener('DOMContentLoaded', scrollAnim);
-        window.addEventListener('scroll', scrollAnim);
-
-        
     </script>
     {% endblock %}
 
+    
+  </body>
 
-
-</body>
 
 </html>

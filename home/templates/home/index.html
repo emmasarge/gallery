@@ -10,22 +10,20 @@
 {% endblock %}
 {% block content %}
 <div class="container-fluid h-100" id="home-page">
-    <div class="row h-100 ">
-        <div class="col-5" id="home-image">
-
+    <div class="row h-100 mobile-image">
+        <div class="col-sm-1 col-5" id="home-image">
         </div>
-        <div class="col-7 my-auto" id="home-title">
+        <div class="col-sm-11 col-md-7 my-auto mx-auto" id="home-title">
             <h1 class="logo-font text-black content mt-5 faded-in">
                 Gallery
             </h1>
             <div>
                 <h4>
-                    <a href="{% url 'products' %}" class="browse-button btn btn-lg py-3">View the current exhibition
+                    <a href="{% url 'products' %}" class="browse-button btn btn-lg py-3 mx-auto">View the current exhibition
                         <span class="mt-10 arrow"><i class="fas fa-angle-double-right"></i></span> </a>
                 </h4>
             </div>
         </div>
-
     </div>
 </div>
 {% endblock %}
