@@ -8,10 +8,13 @@ body {
     font-family: 'Quattrocento Sans', sans-serif;
     margin-top: 116px;
 }
+
+
 a {
     color: #212529;
 }
-a:hover{
+
+a:hover {
     color: #212529;
     text-decoration: none;
     font-size: large;
@@ -60,10 +63,11 @@ h1 {
     opacity: 1;
 }
 
-#blog-img img{
-    max-height:200px;
-    max-width:200px;
+#blog-img img {
+    max-height: 200px;
+    max-width: 200px;
 }
+
 .black-link a {
     color: #343a40 !important;
     text-decoration: none;
@@ -95,11 +99,10 @@ h1 {
 #home-page {
     margin-top: 5rem !important;
     background-color: #fafafa;
-
 }
 
 .bg-white {
-    background-color: #fafafa!important;
+    background-color: #fafafa !important;
 }
 
 #home-title h1 {
@@ -526,6 +529,6 @@ input[name='q']::placeholder {
     .arrow {
         font-size: .75rem;
     }
-    
+
 
 }

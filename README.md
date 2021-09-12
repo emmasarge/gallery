@@ -65,12 +65,13 @@ Please [**click here**](https://docs.google.com/spreadsheets/d/1Jjwrl0Z5zI8jjJYm
 #### User Goals ####
 
 * To navigate the website easily and understand its purpose.
-* To easily find products with the search bar
+* To easily find products with the search bar.
 * To be able to buy pieces of art online as a guest or with an account.
 * To receive a confirmation email with order information after purchase.
 * To be able to manage my account details.
 
 <a name="Scope"></a>
+
 ### Scope ### 
 
 The users should expect the following:
@@ -82,7 +83,7 @@ The users should expect the following:
 * Add multiple items to the cart.
 * Cart total is updated everytime product is added
 * Purchase products securely with Stripe.
-* Create/Update/Save/Delete  profile account details.
+* Create/Update/Save/Delete profile account details.
 
 As an Admin:
 * Add, edit, delete a product and details
@@ -337,13 +338,13 @@ All features have been manually tested, [**please click here to access the testi
 
 ### Requirements ###
 
-* an IDE , I used GitPod.
-* PIP, for Python packages.
+* an IDE like GitPod.
+* pip, for Python packages.
 * Python3
 * Git for version control.
 * Stripe (account, test keys and webhooks) as a secure payment platform.
 * AWS cloud storage and an S3 bucket for online backup of static files.
-* Email account, I used Gmail.
+* Email account, I used gmail.
 
 <a name="locald"></a>
 

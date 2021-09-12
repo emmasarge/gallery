@@ -1,8 +1,9 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto ">
         <li class="nav-item dropdown">
-            <a class="menu-font nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Collection
+            <a class="menu-font nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Collection
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -13,46 +14,47 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="menu-font nav-link text-black " href="#" id="painting-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="menu-font nav-link text-black " href="#" id="painting-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Paintings
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="photograph-link">
+            <div class="dropdown-menu border-0" aria-labelledby="paintin-link">
                 <a href="{% url 'products' %}?category=nudes" class="dropdown-item">Nudes</a>
                 <a href="{% url 'products' %}?category=still_life" class="dropdown-item">Still Life</a>
                 <a href="{% url 'products' %}?category=portrait" class="dropdown-item">Portrait</a>
-                <a href="" class="dropdown-item">All Paintings</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="menu-font  nav-link text-black"  href="#" id="drawing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="menu-font  nav-link text-black" href="#" id="drawing-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Drawings
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="photograph-link">
+            <div class="dropdown-menu border-0" aria-labelledby="drawing-link">
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=exhibition" class="dropdown-item">Exhibition</a>
                 <a href="{% url 'products' %}?category=archive" class="dropdown-item">Archive</a>
             </div>
         </li>
         <li>
-            <a class="menu-font  nav-link text-black"  href="{% url 'contact' %}"id="contact-link" >
+            <a class="menu-font  nav-link text-black" href="{% url 'contact' %}" id="contact-link">
                 Contact
             </a>
-        
+
         </li>
         <li>
-            <a class="menu-font nav-link text-black"  href="{% url 'blog' %}"id="blog-link" >
+            <a class="menu-font nav-link text-black" href="{% url 'blog' %}" id="blog-link">
                 Journal
             </a>
-        
+
         </li>
-    
-    
-    
-       
+
+
+
+
     </ul>
 </div>
 {% block postloadjs %}
 
 
 
-  {% endblock %}
+{% endblock %}
