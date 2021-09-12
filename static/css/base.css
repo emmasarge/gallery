@@ -474,6 +474,7 @@ input[name='q']::placeholder {
     #home-image {
         background: url('/media/elsa.jpeg');
         z-index: -39;
+        border-radius: none;
     }
 
     .arrow {
