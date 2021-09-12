@@ -471,6 +471,10 @@ input[name='q']::placeholder {
         border-radius: 2px;
        
     }
+    #home-image {
+        background: url('/media/elsa.jpeg');
+        z-index: -39;
+    }
 
     .arrow {
         font-size: .75rem;
