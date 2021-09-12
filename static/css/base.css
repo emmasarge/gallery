@@ -48,7 +48,7 @@ h1 {
 
 .mobile-image {
     background: url('/media/elsa.jpeg') hidden;
-    display: opacity;
+    
 }
 
 .content {
@@ -57,27 +57,11 @@ h1 {
     transition: .8s ease-out;
 }
 
-.content.faded-in {
-    -webkit-transition: .10s ease-out;
-    -o-transition: .10s ease-out;
-    transition: .10s ease-out;
-    -webkit-transform: translateY(1);
-    -ms-transform: translateY(1);
-    transform: translateY(1);
-    opacity: 1;
-}
 
 .product-content {
     -webkit-transition: .8s ease-out;
     -o-transition: .8s ease-out;
     transition: .8s ease-out;
-}
-
-.product-content.faded-in {
-    -webkit-transform: translateY(1);
-    -ms-transform: translateY(1);
-    transform: translateY(1);
-    opacity: 1;
 }
 
 #blog-img img {
@@ -520,7 +504,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 120x;
+        padding-top: 120px;
     }
 }
 
@@ -606,8 +590,8 @@ input[name='q']::placeholder {
     }
 
     .mobile-image {
-        background: transparent;
-        display: opacity;
+        background: #fafafa;
+       
     }
 
     .arrow {
