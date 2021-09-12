@@ -2,13 +2,13 @@
 ---
 [**View the full project here**](https://the-gallery-project.herokuapp.com/)
 
-![Site](readme/homepage.png)
+![Site](readme/product-page.png)
 
 ## Contents ##
 ---
 
-* 1. Research
-* 2. UX
+* Research
+* UX
     * [User Stories](#user-stories)
     * [Strategy Goals](#strategy)
     * [Scope](#scope)
