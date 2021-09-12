@@ -49,9 +49,9 @@
              <!-- Image -->
             <figure class="wrap_image">
                 {% if blogpost.image %} 
-                    <img src="{{ blogpost.image.url }}" alt="{{ blogpost.blog_title }}" class="blog_img blog-img" />             
+                    <img src="{{ blogpost.image.url }}" alt="{{ blogpost.blog_title }}" class="blog_img img-fluid" />             
                 {% else %}
-                    <img src="{{ blogpost.image_url }}" alt="{{ blogpost.blog_title }}" class="blog_img blog-img" />
+                    <img src="{{ blogpost.image_url }}" alt="{{ blogpost.blog_title }}" class="blog_img img-fluid" />
                 {% endif %}
             </figure>
         </div>

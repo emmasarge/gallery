@@ -8,6 +8,16 @@ body {
     font-family: 'Quattrocento Sans', sans-serif;
     margin-top: 116px;
 }
+a {
+    color: #212529;
+}
+a:hover{
+    color: #212529;
+    text-decoration: none;
+    font-size: large;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -50,6 +60,10 @@ h1 {
     opacity: 1;
 }
 
+#blog-img img{
+    max-height:200px;
+    max-width:200px;
+}
 .black-link a {
     color: #343a40 !important;
     text-decoration: none;

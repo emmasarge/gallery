@@ -220,9 +220,9 @@ Here is my palette :
 * The landing page includes a hero animation made with the GSAP library, a call to action button to visit the store, a featured product section with animated cards and a security banner.
 * The featured product section showcases products selected on random from the product collection.
 
-**Shopping bag App**
+**Cart App**
 
-![Bagapp](README_IMG/bagapp_readme.gif)
+![Bagapp](#)
 
 * This feature allows the user to add/adjust/delete different products to the shopping bag and view the total price and details in the bag.
 * When a product is added, a preview of the shopping bag is displayed in a toast and the total price/shipping price is updated.
