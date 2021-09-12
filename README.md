@@ -198,14 +198,12 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
 
 **Home App**
 
-![Homeapp]
 
 * This page is a simply welcome page with a hero immage
 * There is also a CTA to go to the collection of products
 
 **Cart App**
 
-![Cartapp](#)
 
 * This app allows users to add/adjust/delete products to their cart and view the total price and product details
 * When a product is added, a preview of the shopping bag is displayed in a toast and the total price/shipping price is updated.
@@ -220,7 +218,9 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
 * Successful payments receive an email notification with their order details.
 
 
-**Product App**
+**Product App** 
+![Productapp](readme/product-details.png)
+
 
 * This app displays all products and separate product details as well as Add/Edit/Delete when they are logged in. It also allows the admin to Add/Edit/Delete products in the database.
 
@@ -237,7 +237,7 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
 
 **Profile App**
 
-![Profileapp](README_IMG/profileapp_readme.gif)
+![Profileapp](readme/profile.png)
 
 
 * This app collects user data to create a unique profile on the website and provide registered user access. 
@@ -260,6 +260,8 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
     - An order history with order number, date and order details. The order number links to the order confirmation page.
 
 **Blog App**
+
+![Blog](readme/blog-detail.png)
 
 * Blog is contributed to by admins, the blog offers an opportunity to write about showcasing artists, art techniques and shows. Also a tool to boost SEO
 
