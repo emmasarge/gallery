@@ -98,6 +98,10 @@ h1 {
 
 }
 
+.bg-white {
+    background-color: #fafafa!important;
+}
+
 #home-title h1 {
     color: #0d1922 !important;
     font-size: 1.5rem;
@@ -442,6 +446,7 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
         background: url('/media/elsa.jpeg');
+        z-index: -9999;
     }
 
     .display-4.logo-font.text-black {
