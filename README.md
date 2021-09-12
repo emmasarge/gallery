@@ -2,7 +2,7 @@
 ---
 [**View the full project here**](https://the-gallery-project.herokuapp.com/)
 
-![Hero Screenshot](#)
+![Site](readme/homepage.png)
 
 ## Contents ##
 ---
