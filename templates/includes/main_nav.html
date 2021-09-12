@@ -24,7 +24,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="menu-font  nav-link text-black  href="#" id="drawing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="menu-font  nav-link text-black"  href="#" id="drawing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Drawings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photograph-link">
@@ -33,18 +33,26 @@
                 <a href="{% url 'products' %}?category=archive" class="dropdown-item">Archive</a>
             </div>
         </li>
+        <li>
+            <a class="menu-font  nav-link text-black"  href="{% url 'contact' %}"id="contact-link" >
+                Contact
+            </a>
+        
+        </li>
+        <li>
+            <a class="menu-font nav-link text-black"  href="{% url 'blog' %}"id="blog-link" >
+                Journal
+            </a>
+        
+        </li>
+    
+    
     
        
     </ul>
 </div>
 {% block postloadjs %}
 
-<script>
-    $(document).ready(function(){
-      $("button").click(function(){
-        $("p").toggle();
-      });
-    });
-    </script>
+
 
   {% endblock %}

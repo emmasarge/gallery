@@ -3,10 +3,8 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(233, 230, 221, 0.4), rgba(233, 230, 221, 0.3)), url('/media/elsa.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    background: #fafafa;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Quattrocento Sans', sans-serif;
     margin-top:116px;
 }
@@ -19,7 +17,10 @@ h1 {
     background-color: #fafafa;
 }
 
-
+#home-image {
+    background: url('/media/elsa.jpeg');
+    border-top-left-radius: 50%;
+}
 .content {
     transition: .8s ease-out;
 }
@@ -70,17 +71,16 @@ h1 {
     font-size: 12px;
 }
 #home-page {
-    margin-top: 13rem!important;
+    margin-top: 5rem!important;
     background-color: #fafafa;
-    border-radius: 2px;
-    padding:10px;
+ 
 }
 
 #home-title h1 {
     color: #0d1922 !important;
     font-size: 1.5rem;
     margin-top: auto;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 #home-title a {
@@ -89,7 +89,7 @@ h1 {
     font-weight: 200;
     font-size: 1rem;
     text-transform: lowercase;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .arrow {
@@ -188,7 +188,7 @@ h1 {
     left: 0;
     position: fixed;
     background: #fafafa;
-    z-index: -1;
+    z-index: -4;
 }
 
 a.category-badge>span.badge:hover {
@@ -218,6 +218,7 @@ input[name='q']::placeholder {
     color: #0d1922 !important;
     font-size: 9rem;
     margin-top: 350px;
+    z-index:20;
 }
 
 #home-title a {
@@ -227,7 +228,12 @@ input[name='q']::placeholder {
     margin-top: -30px;
     text-transform: lowercase;
 }
-
+#home-title a:hover {
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+    -ms-transform: translate(2px, -5px);
+    transform: translate(2px, -5px);
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

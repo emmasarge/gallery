@@ -2,25 +2,30 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 {% block content %}
-    <div class="container h-50" id="home-page">
-        <div class ="row h-100 ">
-            <div class="col-12 my-auto" id="home-title">
-                <h1 class="logo-font text-black content mt-5 faded-in">
-                    Gallery
-                </h1>
-                <div>
-                    <h4>
-                        <a href="{% url 'products' %}"class="browse-button btn btn-lg py-3">View the current exhibition  <span class="mt-10 arrow"><i class="fas fa-angle-double-right"></i></span> </a>
-                    </h4>
-                </div>
+<div class="container-fluid h-100" id="home-page">
+    <div class="row h-100 ">
+        <div class="col-5" id="home-image">
+
+        </div>
+        <div class="col-7 my-auto" id="home-title">
+            <h1 class="logo-font text-black content mt-5 faded-in">
+                Gallery
+            </h1>
+            <div>
+                <h4>
+                    <a href="{% url 'products' %}" class="browse-button btn btn-lg py-3">View the current exhibition
+                        <span class="mt-10 arrow"><i class="fas fa-angle-double-right"></i></span> </a>
+                </h4>
             </div>
         </div>
+
     </div>
+</div>
 {% endblock %}

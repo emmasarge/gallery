@@ -31,10 +31,13 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'profiles',
     'products',
     'cart',
     'checkout',
-    'profiles',
+    'contact',
+    'blog',
+    
 
     # Other
     'crispy_forms',
@@ -208,3 +211,4 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    
