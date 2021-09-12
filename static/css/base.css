@@ -42,12 +42,12 @@ h1 {
 }
 
 #home-image {
-    background: url('/media/elsa.jpeg');
+    background-color: url('/media/elsa.jpeg');
     border-top-left-radius: 50%;
 }
 
 .mobile-image {
-    background: url('/media/elsa.jpeg') hidden;
+    background-color: url('/media/elsa.jpeg') hidden;
     
 }
 
@@ -516,7 +516,7 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
-        background: url('/media/elsa.jpeg');
+        background-color: url('/media/elsa.jpeg');
         z-index: -9999;
     }
 
@@ -584,7 +584,7 @@ input[name='q']::placeholder {
     }
 
     #home-image {
-        background: url('/media/elsa.jpeg')hidden;
+        background-color: url('/media/elsa.jpeg')hidden;
         z-index: -39;
         border-radius: 0;
     }

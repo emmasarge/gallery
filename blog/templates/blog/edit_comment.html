@@ -2,17 +2,17 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container comment-container">
-    
+
     <!-- Header -->
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
@@ -32,7 +32,7 @@
                     {{ form | crispy }}
                 </div>
                 <div class="form-group comment-write-detail">
-                     <a class="btn btn-clear border rounded-0" href="{% url 'blog' %}">Cancel</a>
+                    <a class="btn btn-clear border rounded-0" href="{% url 'blog' %}">Cancel</a>
                     <button class="btn btn-full border text-full rounded-0" type="submit"> Submit Comment
                     </button>
                 </div>
@@ -43,5 +43,5 @@
 {% endblock %}
 
 {% block postloadjs %}
-    <script src="{% static 'blog/js/animation_comments.js' %}"></script>
+
 {% endblock %}
