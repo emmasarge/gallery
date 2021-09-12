@@ -96,7 +96,10 @@ As an Admin:
 
 Wireframe were created with [**Balsamiq**](https://balsamiq.com/).
 
-[**Click here to see Gallery Wireframes**](#)
+[**Click here to see Gallery Forms Wireframes**](readme/forms.png)
+[**Click here to see Gallery Homepage Wireframes**](readme/homepage.png)
+[**Click here to see Gallery Product Details Wireframes**](readme/product-details.png)
+[**Click here to see Gallery Product and Blog Page Wireframes**](readme/product-blog-page.png)
 
 * The wireframe are brief stuctures of the site in initial steps of development.
 
@@ -111,38 +114,32 @@ The intent was to create contemporary and simply e-commerce site that looks like
 
 ##### Colors ####
 
-* My color scheme is very adventurous but this is deliberate, it is the standard gallery protocol of white walls. The color focus was for the art.
+* I used a very muted it palette to reflect on the serenity of a gallery space with soft white walls, very minimalistic. This also helps to draw attention to the products, the paintings and drawings
 
-Here is my palette :
-
-![Palette](#)
+The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21 for a warm mustard color like sunlight.
 
 <a name="fonts"></a>
 
 ### Fonts ###
 
-* I wanted to fit the minimal but gothic aesthetic of the website by pairing a bold gothic font for the titles with a lighter and elegant font for all other text content. I chose the Google Fonts pairing of the bold [**Pirata One**] and the sans-serif [**Raleway**] to match the contrast I wanted to create and found it aesthetically pleasing.
+* I wanted to a clean and classic look to the site and I used Georgia Sans which is used by Vogue and 'Quattrocento Sans', sans-serif for a clean and minimalistic font that was a little more modern.
 
 <a name="icons"></a>
 
 ### Icons ###
 
-* All icons on this project are taken from the library  [**FontAwesome**](https://fontawesome.com/)
+* All icons I used are from the library  [**FontAwesome**](https://fontawesome.com/)
 
 
 <a name="defensivedesign"></a>
 
 ### Defensive Design ###
 
-
-1. All required form inputs display a warning message as a tooltip if the field is filled incorrectly.
-2. If a non-registered user tries to leave a comment or a review, they will be automatically redirected to the sign-in page.
-3. Add to bag button is disabled if the product is out of stock.
-4. If a user tries to add a number of a single product greater than the stock, a warning message will be displayed and the add to bag action is cancelled.
-5. Every time a form is submitted (search, product, review, comment), the user is informed of the action success/failure through a toast message.
-6. Implementation of webhooks to create order status in the database and avoid any misstep from the user during checkout.
-7. Custom error pages redirecting to homepage.
-8. Default images for blog posts and products if the image selected is broken or if no image was selected.
+1. Users register their own profile with password.
+2. All required form inputs display a warning message as a tooltip if the field is filled incorrectly.
+3. If a non-registered user tries to leave a comment or a review, they will be automatically redirected to the sign-in page.
+4. Integration of webhooks from Stripe create order status in the database and avoid any misstep from the user during checkout.
+5. When forms are submitted (search, product, purchase, the user is notified success/failure with a toast message.
 
 
 <a name="technologies"></a>
@@ -153,13 +150,12 @@ Here is my palette :
 ### Languages and Frameworks ###
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Javascript]()
-* [Python]()
+* [Javascript](https://www.javascript.com/)
 * [JQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Font-Awesome](https://fontawesome.com/icons?d=gallery)
-* [GSAP](https://greensock.com/gsap/)
 * [Django](https://github.com/django/django)
+* [Python](https://www.python.org/)
 * [SQLite](https://www.sqlite.org/index.html)
 
 
@@ -171,9 +167,7 @@ Here is my palette :
 * [Heroku](https://heroku.com/)
 * [AWS](https://aws.amazon.com/)
 * [Balsamiq](https://balsamiq.com/)
-* [QuickDBD](https://www.quickdatabasediagrams.com/)
 * [Favicon.io](https://favicon.io/)
-* [Gloomap](https://www.gloomaps.com/)
 * [W3C HTML Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * [JSHINT](https://jshint.com/)
@@ -189,82 +183,56 @@ Here is my palette :
 
 ### Existiting Features per Apps ###
 
-**Responsiveness**
+**Responsive Design**
 
-* This feature allows the user to consult the website from any of their devices.
+* The responsive design allows users to use their phone, laptop, desktop or tablet to use the site.
 
-* All templates of this project have been built with the responsive framework Bootstrap 4. I also used targeted media queries to make this project responsive on all screen sizes.
+* Using Bootstrap and media queries, I was able to apply dynamic design.
 
-**Navigation bars**
+**Navigation**
 
-![navbar](README_IMG/navbar_readme.png)
-
-* This feature allows the user to navigate through the website easily and without conflicts.
-
-* This project has two responsive navigation bars present on all pages:
-1. Main navigation bar: 
-* The search bar allows the user to search for products by name, word, category.
-* My profile dropdown menu: Links to register or sign in forms when the user is logged out. When logged in as a registered user, the menu links to the profile app and the logout page. When logged in as an admin, the dropdown links to the the product and blog management pages as well as the profile app and the log out page.
-* Shopping bag: Update shopping bag once an item is added to the bag and displays the total price. 
-
-2. Product/Contact/Blog navigation bar:
-* This navigation bar allows the user to check the shop collections by different category.
-* The user can also navigate to the blog section and the contact page.
+* Gallery's sight offers a custom desktop and mobile nav bar
+* Navbar offers search capabilities
+* Access to profile, cart and products
+* Product tabs filter product type
 
 **Home App**
 
-![Homeapp](README_IMG/homeapp_readme.gif)
+![Homeapp]
 
-* This features informs in an attractive way the user of the content of the website and it's safety. It gives an introduction about the artist as well as the products .
-
-* This feature focuses on the index page only.
-* The landing page includes a hero animation made with the GSAP library, a call to action button to visit the store, a featured product section with animated cards and a security banner.
-* The featured product section showcases products selected on random from the product collection.
+* This page is a simply welcome page with a hero immage
+* There is also a CTA to go to the collection of products
 
 **Cart App**
 
-![Bagapp](#)
+![Cartapp](#)
 
-* This feature allows the user to add/adjust/delete different products to the shopping bag and view the total price and details in the bag.
+* This app allows users to add/adjust/delete products to their cart and view the total price and product details
 * When a product is added, a preview of the shopping bag is displayed in a toast and the total price/shipping price is updated.
 
 **Checkout App**
 
-![Checkoutapp](README_IMG/checkout_readme.gif)
-
-* This feature allows the user to safely buy the selection of item previously put in the bag thanks to **Stripe**.
-* The user doesn't need to be logged in to buy products. If logged in the shipping details will be filled from the details given in the user profile. 
-* If no details where given or a detail is changed in the checkout form when logged in, the user has the possibility to check the Remember checkbox and all details will be updated in the profile app.
-* The credit card details section is linked to the payment platform **Stripe** to ensure a secure payment procedure. 
-* Once the buy button is clicked it triggers custom loading animated screen that will remain while Stripe check the credit card details.
-* If the payment did not go through, the user is redirected to the checkout form and informed of the failed procedure.
-* If the payment succeeded, the user will be send a confirmation email with the order details and the order number and will be redirected to the checkout success page, informing them of the order detail and the order number.
+* Using **Stripe**, the user can securely make a payment for their cart.
+* The user can be a guest without a profile and still able to buy the product.
+* Input forms strictly require all necessary information for payment security.
+* The credit card details section is linked to the payment platform **Stripe** for secure payment. 
+* If payment fails, user is notified.
+* Successful payments receive an email notification with their order details.
 
 
 **Product App**
 
-![Productapp](README_IMG/productapp_readme.gif)
-
-* This feature allows the user to see all products and their details on the website. The user can also read product reviews as well as Add/Edit/Delete their product review if they are logged in. It also allows the admin to Add/Edit/Delete products in the database.
+* This app displays all products and separate product details as well as Add/Edit/Delete when they are logged in. It also allows the admin to Add/Edit/Delete products in the database.
 
 1. Products page:
-* The user can browse by product categories that are on the website through the navigation bar. A keyword search can also be conducted in the navigation bar search box to browse items more specifically.
-* The products displayed can be sorted out by alphabetical order and price thanks to the selector under the page title.
+* Products are displayed.
+* Products can be filtered by category, price, rating etc
 
 2. Product detail page:
-* This page displays all the product details (name, category, image, description, price, sizes if any) as well as the review section. All users can visit the product details and read the reviews but need the be registered and logged in to leave a review and a rating.
+* Displays individual product and add to cart functions.
 
-3. Review/rating section:
-* When logged in the user can edit and delete their review and rating directly from the review section. The edit link  redirects to an edit form while the delete link triggers a confirmation modal and deletes the review forever if "Delete" is clicked in the modal.
-* To add a review and a rating, the user can click on the "Leave a review" button and will be redirected to the add review page and fill a simple form. Once the form is filled and the user clicked the "Submit" button, they will be redirected to the product page.
-
-4. Suggested Product:
-* This feature is located at the bottom of the product details page and is implemented to encourage the customer to look into more store products.
-* It generates maximum 4 product cards of the same product category as the product details viewed by the user.
-
-5. Product management:
-* If the user is logged in as an admin, they will have the possibility to navigate to the Product management page (through the profile dropdown menu in the main navigation bar) and have the possibility to add a product to the database by filling the add product form. Images can be selected directly from the user's computer and not only as url linked images.
-* Only the admins can edit and/or delete any product by navigating on a product detail page and click on the edit/delete links.The edit link redirects to a edit form while the delete link triggers a confirmation modal and permanently deletes the product from the database if "Delete" is clicked in the modal.
+3. Product management:
+* Admins can access DB to manage products, delete, and changer their details.
 
 
 **Profile App**
@@ -272,54 +240,47 @@ Here is my palette :
 ![Profileapp](README_IMG/profileapp_readme.gif)
 
 
-* This feature allows the user to create a custom profile on the website and be given registered user privileges (comments, reviews, checkout details)
+* This app collects user data to create a unique profile on the website and provide registered user access. 
 1. Registration
-* The user can register to the website through the Register form page. Every account requests an email address, a username and a password.
-* The email and password need to be confirmed twice to avoid typos.
-* A verification email is sent to the user's email to avoid errors. That email contains a security link that opens a "confirmed email" page on the website. The user is added to the database and is allowed to complete their profile on their new profile page.
+* User can register as a new user
+* The email and password need to be confirmed twice.
+* A verification email is sent to new user's email. The email contains a security link to confirm the user account.
 
 2. Signing in.
-* If the user is already registered, they can sign in through the login page. The user needs their email adress or username as well as their password to connect. The user can also retrieve their password if forgotten.
+* Registered users can sign into their account and view their saved shopping list.
+
 * Once the login form is approved, the user is redirected to their profile page containing their personal information.
 
 3. Log out
-* Once the the user is logged in, they can easily log out by accessing the logout page through the main navigation bar and confirm on that page their intention to log out. The user is then redirected to the index page.
+* User can log out of their account.
 
 4. Profile Page:
 * The profile page is personal and contains:
-    - An editable personal information form including the shipping details that will be remember at checkout if logged in.
+    - Information form including the shipping details.
     - An order history with order number, date and order details. The order number links to the order confirmation page.
-    - A review history with date, review and rating. the user can delete or edit their reviews from there.
 
 **Blog App**
 
-![Blogapp](README_IMG/blogapp_readme.gif)
-![Blogpage](README_IMG/blogpage_readme.gif)
-
-* This feature allows the user to be informed of the current artist situation and actions on the webshop as well as communicating with the whole website's community.
+* Blog is contributed to by admins, the blog offers an opportunity to write about showcasing artists, art techniques and shows. Also a tool to boost SEO
 
 1. Blog page:
-* This page can be accessed through the navigation menu and displays all blog posts by date, the blog cards include an image, a title, a content preview and the date/author.
+* Blog page displays all blog posts.
 
 2. Blog detail page:
-* This page display the full blog post (title, image, text, author and date) as well as the comment section. All users can read the blog post and comments but need the be registered and logged in to comment.
+* Displays authors, time of submission, an image and content.
 
 3. Comment section
-* When logged in the user can edit and delete their comment directly from the comment section. The edit link redirects to an edit form while the delete link triggers a confirmation modal and permanently deletes the comment if "Delete" is clicked in the modal.
-* To add a comment, the user can click on the "Leave a comment" button and will be redirected to the add comment page and fill a simple form. Once the form is filled and the user clicked the "Submit" button, they will be redirected to the blog page.
+* Logged in users can create comments to engage with blog
+* Registered users can delete their posts.
 
 4. Blog management:
-* If the user is logged in as an admin, they will have the possibility to navigate to the Blog management page (through the profile dropdown menu in the main navigation bar) and have the possibility to add a blog post to the blog page/database by filling the add blog post form. Images can be selected directly from the user's computer and not only as URL linked images.
-* Only the admins can edit and/or delete any blog post by navigating to a blog detail page and clicking on the edit/delete links. The edit link redirects to an edit form while the delete link throws a confirmation modal and deletes the post forever if "Delete" is clicked in the modal.
+* Only the admins can edit or delete blogs on the blog detail page. 
 
 **Contact App**
 
-![Contactapp](README_IMG/contact_readme.png)
-
-* This feature allows the user to contact the website's admin and send queries.
-
-* The Contact page allows the user to send a written query to the admin. The query is stored in the database and two email alerts are sent: one to the user to confirm that the message was received and one to the admin to signal the reception of a new query. The alert sent to the admin contains all information given by the user in the contact form.
-* The user does not need to be a registered user to send a query.
+* This app provides a point of contact for users to send emails to admins.
+* Email queries are stored on database
+* Visitor can be a guest or have an account to use the contact form.
 
 All features have been manually tested, [**please click here to access the testing document**](TESTING.md)
 
@@ -327,10 +288,9 @@ All features have been manually tested, [**please click here to access the testi
 
 ### Future Features ###
 
-* The possibility to add different stock per product sizes.
-* Answering messages sent through contact form via the website.
-* Sale prices.
-* Social Media login (ex: Google, Facebook...).
+* I would like to add a bigger art database
+* Create more complex price structure to order prints of various sizes and prices.
+* I would like to apply more animation.
 
 ## Deployment ##
 ---
@@ -338,13 +298,13 @@ All features have been manually tested, [**please click here to access the testi
 
 ### Requirements ###
 
-* an IDE like GitPod.
-* pip, for Python packages.
+* an IDE
+* pip, for Python packages
 * Python3
-* Git for version control.
-* Stripe (account, test keys and webhooks) as a secure payment platform.
-* AWS cloud storage and an S3 bucket for online backup of static files.
-* Email account, I used gmail.
+* Git for version control
+* Stripe (account, test keys and webhooks) for payment
+* AWS cloud storage for static image files
+* Email account to create account
 
 <a name="locald"></a>
 
@@ -354,21 +314,20 @@ All features have been manually tested, [**please click here to access the testi
 
 **1. Clone from Github**
 
-* One can run this project locally on their IDE of choice by saving a copy of the Github repository at https://github.com/AudreyLL88/cw_store.git by clicking the "Download Code" button or by running this command in their IDE command line:
+* To this project locally on their IDE, you can clone a copy of the Github repository at https://github.com/emmasarge/gallery.git by clicking the "Download Code" button. Alternatively run command in the terminal:
 
-$ git clone https://github.com/AudreyLL88/cw_store.git
+$ git clone https://github.com/emmasarge/gallery.git
 
-To remove any link to github, one can use the command git remote rm origin into their terminal.
+To remove from github to your account, use command git remote rm origin in terminal.
 
 **2. Install Python required modules**
 
-* run the command below to install all the module required to run this project:
-
+* Run:
 pip3 install -r requirements.txt
 
 **3. Store environment variables**
 
-* If you decide to use Gitpod for the development of this project and you can store your environement variables directly in Gitpod by clicking on "Settings" on the Worspaces page then inserted the following variables in  the "Environement Variables" section :
+* When using Gitpod, an alterantive to a .env is store environement variables to Gitpod "Settings" on dashboard and add these variables in  the "Environement Variables" section :
 
 ```
 'DEVELOPMENT', 'True'
@@ -378,7 +337,7 @@ pip3 install -r requirements.txt
 'STRIPE_WH_SECRET', '<your value>'
 ```
 
-* If using another IDE or Gitpod, create env.py file in the root directory of the project and include the following:
+* Otherwise create env.py file in the root directory of the project and include the following:
 
 ```
 import os
@@ -391,39 +350,39 @@ os.environ["DEVELOPMENT"] = "True"
 ```
 
 * Follow these instructions to fill in the values of each keys:
-    - the SECRET_KEY : use a Django Secret Key Generator such as [Djecrety](https://djecrety.ir/)
-    - the STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY can be found on the Stripe Dashboard in the Developer's API section.
-    - the STRIPE_WH_SECRET: Can be found in the Developer'sAPI section after creating a webhook.
+    - the SECRET_KEY : use a Django Secret Key Generator
+    - the STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY found on the Stripe Developers Dashboard.
+    - the STRIPE_WH_SECRET: Can be found in the Developer's API above tests.
 
-**4. Migrate database models**
+**4. Migrate models to DB**
 
-* Run the commands below to migrate the models and set up an SQLite database:
+* Run these commands to migrate models to SQLite database:
 
 ````
 python3 manage.py makemigrations
 python3 manage.py migrate
 ````
 
-**5. Load categories and products**
+**5. Upload data**
 
-* Run the command below in that exact order to load category then product fixtures:
+* Run the command in this order to upload category and product fixtures:
 
 ````
 python3 manage.py loaddata categories
 python3 manage.py loaddata products
 ````
 
-**6. Create SuperUser**
+**6. Create Superuser**
 
-* A superUser is needed to access the admin panel in Django. Run the command below and follow the instructions after (email needed):
+* A superUser is needed to access the admin panel in Django. Run :
 
 ````
 python3 manage.py createsuperuser
 ````
 
-**7. Run the app**
+**7. Run app**
 
-* Enter the command below to start running the project locally :
+* Enter the command below to start running the project locally on gitpod:
 
 ````
 python3 manage.py runserver
@@ -432,17 +391,17 @@ python3 manage.py runserver
 
 ### Heroku Deployment ###
 
-**1. Signup and login to Heroku**
+**1. Create Heroku Account and App**
 
 * Start by going to https://heroku.com/ and create an account or sign in your already existing account.
-* Create an app with a unique name and choose your location.
-* Navigate to the Resource tab and create a free Postgres database. 
+* Create an app with a unique name and choose local location.
+* Create a postgres database
 
-**2. Prepare the database**
+**2. Setup database**
 
-* The DATABASE_URL variable was automatically created in the Settings< Config Vars section. Copy its value and temporarily add it to your environment variables in your IDE or your env.py.
+* The DATABASE_URL variable was automatically created in the Settings // Config Vars section. Add this to your environment variables in your IDE or your env.py.
 
-* In your Heroku App, navigate to Settings and set the following variables in the Config Vars section:
+* In Heroku App, navigate to Settings and set the following variables in the Config Vars section:
 
 `````
 'AWS_ACCESS_KEY_ID', '<your value>'
@@ -455,18 +414,18 @@ python3 manage.py runserver
 'USE_AWS', 'True'
 `````
 
-* You can now make the migrations to start using Postgres:
+* Make the migrations to start using Postgres to connect to Heroku:
 ``````
 python3 manage.py makemigrations
 python3 manage.py migrate
 ``````
-* And load the category the product fixtures:
+* Add category the product fixtures to connect to Heroku:
 ``````
 python3 manage.py loaddata categories
 python3 manage.py loaddata products
 ``````
 
-**3. Create a Superuser for mew Postgres database**
+**3. CreateSuperuser for Postgres DB**
 
 * Run the following command to create a superuser to navigate to Django's admin panel:
 
@@ -476,8 +435,8 @@ python3 manage.py createsuperuser
 
 **4. Create Procfile**
 
-* Create a Procfile and add " web: python app.py "then save.
-* Push all changed files to Github by running the following commands:
+* Create a Procfile and add " web: python app.py "
+* Push changed code to Github with these commands:
 ```````
 git add .
 git commit -m "..."
@@ -520,9 +479,7 @@ $ git remote add heroku <your heroku git url>
 
 **10. Push to Heroku**
 
-* If you have decided to connect your Github repository to heroku and selected the automatic deployment option, commit and push will be pushed to Heroku.
-
-* In other scenarios , use the following command:
+* If you connected the Github repository to Heroku and chose automatic deployment, commit and push changes and they will be added to Heroku or in the terminal:
 
 ```````
 $ git push -u heroku master
@@ -538,19 +495,16 @@ The app can now be open at https://< your-app-name >.herokuapp.com/
 
 **Image Credits:**
 
-All products images were taken my personal are collection:
-
-The image used on the 404 and 505 pages is by [**Radostina Georgieva**](https://dribbble.com/shots/12124455-Error-404-Illustration)
+All products are my personal paintings.
 
 **Code Tutorials Credits**
 
-* This website was made following the tutorials of Code institute for the Boutique Ado project by Chris Zielinski.
+* This project was heavily referenced on the BOUTIQUE ADO project.
 
-* The hero animation was inspired by the [**BedimCode Tutorial**](https://www.youtube.com/watch?v=PLp46cA0Ep8) and heavily edited to fit the project.
 
 
 **Extra credits to:**
 
-* The Slack Community for the careful reviews and advice when I was stuck on bugs
+* The Slack Community and CI tutors
 
 
