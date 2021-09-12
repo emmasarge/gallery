@@ -6,7 +6,7 @@ body {
     background: #fafafa;
     height: calc(100vh - 164px);
     font-family: 'Quattrocento Sans', sans-serif;
-    margin-top:116px;
+    margin-top: 116px;
 }
 
 h1 {
@@ -21,10 +21,12 @@ h1 {
     background: url('/media/elsa.jpeg');
     border-top-left-radius: 50%;
 }
+
 .mobile-image {
     background: url('/media/elsa.jpeg') hidden;
-    display:opacity;
+    display: opacity;
 }
+
 .content {
     transition: .8s ease-out;
 }
@@ -71,13 +73,15 @@ h1 {
 #account {
     font-size: 12px;
 }
+
 #cart {
     font-size: 12px;
 }
+
 #home-page {
-    margin-top: 5rem!important;
+    margin-top: 5rem !important;
     background-color: #fafafa;
- 
+
 }
 
 #home-title h1 {
@@ -99,6 +103,7 @@ h1 {
 .arrow {
     font-size: 1.5rem;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -218,11 +223,12 @@ input[name='q']::placeholder {
     color: #fafafa;
 }
 
+
 #home-title h1 {
     color: #0d1922 !important;
     font-size: 9rem;
     margin-top: 350px;
-    z-index:20;
+    z-index: 20;
 }
 
 #home-title a {
@@ -232,12 +238,14 @@ input[name='q']::placeholder {
     margin-top: -30px;
     text-transform: lowercase;
 }
+
 #home-title a:hover {
     transition: 0.5s;
     transition-timing-function: ease-out;
     -ms-transform: translate(2px, -5px);
     transform: translate(2px, -5px);
 }
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -419,6 +427,7 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+        background: url('/media/elsa.jpeg');
     }
 
     .display-4.logo-font.text-black {
@@ -427,7 +436,7 @@ input[name='q']::placeholder {
 
     .nav-link {
         padding: 0.15rem;
-        color:#0d1922!important;
+        color: #0d1922 !important;
     }
 
     .nav-link i.fa-lg {
@@ -456,45 +465,48 @@ input[name='q']::placeholder {
     }
 
     #home-title {
-        background-color:#fafafa;
-        border-bottom-right-radius: 45%;
-        border-top-right-radius: 45%;
+        background-color: #fafafa;
+        padding: 4px;
     }
 
     #home-title h1 {
-        color: #212529!important;
+        color: #212529 !important;
         font-size: 3rem;
         margin-top: auto;
         text-align: left;
-      
-       
+
+
     }
-    
+
     #home-title a {
         color: #212529 !important;
         font-family: Georgia, 'Times New Roman', Times, serif !important;
         font-weight: 400;
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         text-transform: lowercase;
         text-align: left;
-        
-        
+
+
     }
+
     #home-page {
-       
         border-radius: 2px;
     }
+
     #home-image {
         background: url('/media/elsa.jpeg')hidden;
         z-index: -39;
         border-radius: 0;
     }
+
     .mobile-image {
-        background: url('/media/elsa.jpeg');
-        display:opacity;
+        background: transparent;
+        display: opacity;
     }
+
     .arrow {
         font-size: .75rem;
     }
+    
 
 }
