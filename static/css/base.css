@@ -14,6 +14,7 @@ body {
     height: calc(100vh - 164px);
     font-family: 'Quattrocento Sans', sans-serif;
     margin-top: 116px;
+    display: inline-block;
 }
 
 

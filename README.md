@@ -46,7 +46,7 @@ I looked at a number of portfolio and gallery sites, including the one I made wi
 ### User Stories ###
 
 I used the Boutique Ado as a reference, I followed the user stories in a Google Docs spreadsheet.
-
+[Click here to view](https://docs.google.com/spreadsheets/d/1_1PLjGptzSAbOWP1vXC1fD3hp-4bqpj3bSi4dvUwiF0/edit#gid=0)
 
 <a name="strategy"></a>
 ### Strategy Goals ###

@@ -41,6 +41,7 @@ def blog_detail(request, blogpost_id):
     context = {
         'blogpost': blogpost,
         'comments': comments,
+        'blogpost': blogpost,
     }
 
     return render(request, 'blog/blog_detail.html', context)
@@ -225,6 +226,7 @@ def edit_comment(request, comment_id):
     """
 
     comment = get_object_or_404(BlogComment, pk=comment_id)
+    blogpost = get_object_or_404(BlogPost, pk=comment.blogpost.id)
     if request.user == comment.comment_user or request.user.is_superuser:
         if request.method == 'POST':
             form = CommentForm(request.POST, instance=comment)
@@ -244,9 +246,12 @@ def edit_comment(request, comment_id):
         context = {
             'form': form,
             'comment': comment,
+            'blogpost': blogpost
         }
 
         return render(request, template, context)
     else:
         messages.error(request, 'You cannot do that !')
         return redirect(reverse('blog'))
+    
+    

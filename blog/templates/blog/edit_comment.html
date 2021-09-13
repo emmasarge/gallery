@@ -26,7 +26,7 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 bg-white rounded shadow-sm p-4 mb-5 comment-write">
             <h5 class="mb-4 comment-write-detail">Leave a comment</h5>
-            <form method="POST" action="{% url 'blog_comment' blogpost.id %}" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_comment' comment.id %}" enctype="multipart/form-data">
                 <div class="form-group comment-write-detail">
                     {% csrf_token %}
                     {{ form | crispy }}
