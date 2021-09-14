@@ -1,6 +1,6 @@
 Hi,
 
-{{ first_name }} {{last_name}} sent you a message at the Gallery. Please answer at this email:{{ sender_email }} or contact them by phone at:{{ phone_number }}.
+{{ first_name }} {{last_name}} sent you a message at the Gallery. Please answer at this email: {{ sender_email }} or contact them by phone at:{{ phone_number }}.
 
 Their message: 
 {{ your_message }}

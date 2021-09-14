@@ -525,4 +525,7 @@ All products are my personal paintings.
 
 * The Slack Community and CI tutors
 * HARRY DHILLON who really helped me and was so generous with his time. 
+* Audrey Lloancy for inspiration for contact and comment options
+* My partner for supporting me, my mental healthand working full time and doing this course and not giving him much time or attention. 
+
 
