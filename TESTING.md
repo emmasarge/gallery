@@ -28,17 +28,17 @@ This project was created on Chrome but has been tried on a Samsung galaxy, iphon
 **HTML**
 
 [**W3C Markup Validator Service**](https://validator.w3.org/) for testing HTML.
-![HTML](readme/html-test.png)
+![HTML](readme/html-test.png) All issues are fixed
 
 **CSS**
 
 [**W3C CSS Validator Service**](https://jigsaw.w3.org/css-validator/) to test CSS.
 
-![CSS](readme/css-test.png)
+![CSS](readme/css-test.png) All issues are fixed
 
 **Javascript**
 
-[**JSHint**]() to validate Javascript files.
+[**JSHint**]() to validate Javascript files. All issues are fixed
 
 
 
@@ -125,7 +125,7 @@ Secure payment
 
 * The input forms were sized wrong, and despite trying to justify center, I was unable to move the forms center to the page. Due to lack of time due to work commitments, I haven't solved this successfully. I have played with margins and container-fluid. There is no margin or padding that can be detected as see below:
 
-[here](readme/form-issue.png)
+![here](readme/form-issue.png)
 
 * At one point I lost all my database showing on my site after I updated my json files. I ran this: 
 heroku run - 
