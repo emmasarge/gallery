@@ -47,7 +47,9 @@ I looked at a number of portfolio and gallery sites, including the one I made wi
 ### User Stories ###
 
 I used the Boutique Ado as a reference, I followed the user stories shared and created one in a Google Docs spreadsheet.
-[Click here to view](https://docs.google.com/spreadsheets/d/1_1PLjGptzSAbOWP1vXC1fD3hp-4bqpj3bSi4dvUwiF0/edit#gid=0)
+* [Click here to view](https://docs.google.com/spreadsheets/d/1_1PLjGptzSAbOWP1vXC1fD3hp-4bqpj3bSi4dvUwiF0/edit#gid=0)
+
+* ![Here is a screenshot of the stories](readme/user-story.png)
 
 <a name="strategy"></a>
 ### Strategy Goals ###
@@ -96,10 +98,10 @@ As an Admin:
 
 Wireframe were created with [**Balsamiq**](https://balsamiq.com/).
 
-[**Click here to see Gallery Forms Wireframes**](readme/forms.png)
-[**Click here to see Gallery Homepage Wireframes**](readme/homepage.png)
-[**Click here to see Gallery Product Details Wireframes**](readme/product-details.png)
-[**Click here to see Gallery Product and Blog Page Wireframes**](readme/product-blog-page.png)
+* [Gallery Forms Wireframes](readme/forms.png)
+* [Gallery Homepage Wireframes](readme/homepage.png)
+* [Gallery Product Details Wireframes](readme/product-details.png)
+* [Gallery Product and Blog Page Wireframes](readme/product-blog-page.png)
 
 * The wireframe are brief stuctures of the site in initial steps of development.
 
@@ -294,7 +296,7 @@ The colors I used were :
 * Email queries are stored on database
 * Visitor can be a guest or have an account to use the contact form.
 
-All features have been manually tested, [please click here for Testing](TESTING.md)
+All features have been tested, [please click here for Testing](TESTING.md)
 
 <a name="future"></a>
 
