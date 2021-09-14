@@ -45,7 +45,7 @@ This project was created on Chrome but has been tried on a Samsung galaxy, iphon
 **Python**
 
 Gitpod built-in linter and [**PEP8**] to test Python files.
-[pip3 -m flake8](readme/pep8.png)
+![pip3 -m flake8](readme/pep8.png)
 
 
 <a name="manual"></a>
@@ -90,13 +90,13 @@ Admin and super user can log into the site or visit the admin page to use CRUD o
 * Expected: admin can have access to more secure functions
 * Testing: Logged in as admin, had more access than regular user, added products and edited products. 
 * Result: Admin and super user can adjust products and blogs in admin settings.
-* [superuser](readme/superuser.png)
+* ![superuser](readme/superuser.png)
 
 **6. Stripe** 
 Secure payment
 
 * Expected: user can log in credit card details to secure a payment 
-* Testing: User completes checkout funnel and adds payment with false card 42424242424242 424 4242. Payment is successful and email is sent. Checked webhooks in stripe and they are successful. Checked webhook success on [stripe](readme/webook.png)
+* Testing: User completes checkout funnel and adds payment with false card 42424242424242 424 4242. Payment is successful and email is sent. Checked webhooks in stripe and they are successful. Checked webhook success on![stripe](readme/webook.png)
 * Result: functioning and secure payment method
 
 
@@ -110,9 +110,9 @@ Secure payment
 * Testing: used an ipad 6, iphone 10, iphone7, macbook pro, lenovo think pad.
 * Result: the site was looking fine but some input forms aren't translating to desktop. 
 
-* [Product page mobile](readme/product-mobile.png)
-* [Product page desktop](readme/product-page.png)
-* [Forms](readme/forms.png)
+* ![Product page mobile](readme/product-mobile.png)
+* ![Product page desktop](readme/product-page.png)
+* ![Forms](readme/forms.png)
 
 **9. Blog** 
 * Expected: A blog that admins can add, edit and delete. Users can only see the blog but can write comments. The admin can delete or edit comments. 
@@ -123,7 +123,9 @@ Secure payment
 
 * Safari isn't reading the CSS well despite running the css files through [this](https://autoprefixer.github.io/ ) but the changes didn't make a different for Safari. Chrome and IE are just fine.
 
-* The input forms were sized wrong, and despite trying to justify center, I was unable to move the forms center to the page. Due to lack of time due to work commitments, I haven't solved this successfully. I have played with margins and container-fluid. 
+* The input forms were sized wrong, and despite trying to justify center, I was unable to move the forms center to the page. Due to lack of time due to work commitments, I haven't solved this successfully. I have played with margins and container-fluid. There is no margin or padding that can be detected as see below:
+
+[here](readme/form-issue.png)
 
 * At one point I lost all my database showing on my site after I updated my json files. I ran this: 
 heroku run - 

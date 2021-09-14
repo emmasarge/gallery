@@ -39,7 +39,9 @@
 
 For Gallery, I wanted to attempt a revisable online community gallery as many artists find it difficult to make their own websites to show their own work. This site offers an opportunity for exposure, selling their pieces and prints. 
 
-I looked at a number of portfolio and gallery sites, including the one I made with SquareSpace to make an e-commerce version that is more intuitive than many sites available.
+I looked at a number of portfolio and gallery sites, including the one I made with SquareSpace to make an e-commerce version that is more intuitive than many sites available. 
+
+If you would like to use the admin account to test admin settings, please email me at emmasargeant206@gmail.com.
 
 ## UX (User Experience) ##
 ---
@@ -112,7 +114,7 @@ Wireframe were created with [**Balsamiq**](https://balsamiq.com/).
 
 * Using my python models, I put together a schema, an outline of the database and how it engages with each app to run the program from the backend. You will see how a user will log in and their journey to check out, read and comment on a block and more. 
 
-[Click here to see the schema](readme/gallery-db.pdf)
+![Click here to see the schema](readme/gallery-db.pdf)
 
 <a name="design"></a>
 
@@ -322,11 +324,11 @@ All features have been tested, [please click here for Testing](TESTING.md)
 * AWS cloud storage for static image files
 * Email account to create account
 
-<a name="locald"></a>
+<a name="deploy"></a>
 
 ### Local Deployment ###
 
-<a name="herokud"></a>
+<a name="heroku"></a>
 
 **1. Clone from Github**
 
@@ -336,14 +338,14 @@ $ git clone https://github.com/emmasarge/gallery.git
 
 To remove from github to your account, use command git remote rm origin in terminal.
 
-**2. Install Python required modules**
+**2. Install Python modules**
 
 * Run:
 pip3 install -r requirements.txt
 
 **3. Store environment variables**
 
-* When using Gitpod, an alterantive to a .env is store environement variables to Gitpod "Settings" on dashboard and add these variables in  the "Environement Variables" section :
+* When using Gitpod, an alterantive to a .env is store environement variables to Gitpod "Settings" on dashboard and add these variables in  the "Environement Variables" section:
 
 ```
 'DEVELOPMENT', 'True'
@@ -477,7 +479,7 @@ heroku login -i
 
 **7. Settings**
 
-*Add the hostname of your Heroku App to "ALLOWED HOSTS" in settings.py. the Hostname can be found in the heroku settings < App Name . 
+*Add the hostname of your Heroku App to "ALLOWED HOSTS" in settings.py. The hostname cis in the heroku settings < App Name . 
 
 **8. Connect repository to Heroku**
 
@@ -490,12 +492,12 @@ $ git remote add heroku <your heroku git url>
 ```````
 
 **9. Add static files to AWS S3**
-* In your S3 Bucket, create a 'Media' folder and add all your media files. 
-* Still in the bucket, create a 'Static' folder. Django will collect all static files and upload them to S3 as soon as the app is deployed to Heroku
+* In your S3 Bucket, create folder called' media' and for all photos and media files. 
+* Create a 'static' folder for Django to collect static files and upload them to S3 as soon as the app is deployed to Heroku
 
 **10. Push to Heroku**
 
-* If you connected the Github repository to Heroku and chose automatic deployment, commit and push changes and they will be added to Heroku or in the terminal:
+* Once connected to Github repository from Heroku and you have selected automatic deployment, commit and push changes and they will be applied to Heroku or in the terminal:
 
 ```````
 $ git push -u heroku master
