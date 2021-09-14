@@ -439,7 +439,7 @@ input[name='q']::placeholder {
     -ms-user-select: none;
     user-select: none;
     background-color: #0d1922;
-    border: 1px solid #0d1922;
+    border: 1px solid;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -457,7 +457,6 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input[type='submit']:hover {
     color: #fff;
     background-color: #222;
-    border-color: #222;
 }
 
 .allauth-form-inner-content a {
@@ -489,7 +488,6 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
     border-radius: 0;
 }
 
@@ -598,6 +596,4 @@ input[name='q']::placeholder {
     .arrow {
         font-size: .75rem;
     }
-
-
 }
