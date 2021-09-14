@@ -15,10 +15,12 @@
         * [Stripe](#stripe)
         * [Security](#security)
         * [Acessibility](#acessibility)
+        * [Blog](#blog)
 * 3. [Issues](#issues)
 
 
 <a name="validation"></a>
+
 ## Validation ## 
 ---
 This project was created on Chrome but has been tried on a Samsung galaxy, iphone, Macbook Pro, MacBook Air, Lenovo and large desktop. It works on Explorer and Safari too though I have been having issues with styling on Safari. 
@@ -79,7 +81,7 @@ User can search site for any product with filter and search bar
 User can securely purchase their item or save item to cart
 
 * Expected: Intuitive funnel to checkout
-* Testing: Logged in and out of account to see if my products would still be in cart, they were. Added multiple products, deleted products from cart
+* Testing: Logged in and out of account to see if my products would still be in cart, they were. Added multiple products, deleted products from cart.
 * Result: Functionality is successful
 
 **5. Admin and Store management**
@@ -111,3 +113,27 @@ Secure payment
 * [Product page mobile](readme/product-mobile.png)
 * [Product page desktop](readme/product-page.png)
 * [Forms](readme/forms.png)
+
+**9. Blog** 
+* Expected: A blog that admins can add, edit and delete. Users can only see the blog but can write comments. The admin can delete or edit comments. 
+* Testing: As admin I created and added a blog, added a comment and deleted them. When logged in as a guest, I could read the blog and write a comment. I could not edit or delete the blog or comments.
+* Result: Blog and comments are working
+
+## Issues ##
+
+* Safari isn't reading the CSS well despite running the css files through [this](https://autoprefixer.github.io/ ) but the changes didn't make a different for Safari. Chrome and IE are just fine.
+
+* The input forms were sized wrong, and despite trying to justify center, I was unable to move the forms center to the page. Due to lack of time due to work commitments, I haven't solved this successfully. I have played with margins and container-fluid. 
+
+* At one point I lost all my database showing on my site after I updated my json files. I ran this: 
+heroku run - 
+
+* python manage.py shell
+* from products.models import Product
+* Product.objects.all().delete()
+* exit()
+* heroku run python manage.py loaddata products
+
+* Trying to reach my django admin off my heroku site but I was not able to reach it, I get server error 500, in settings I needed to check the ALLOWED_HOSTS = [] was correct
+
+* I was getting 404 error message from my webhooks. This was resolved by checking my URL
