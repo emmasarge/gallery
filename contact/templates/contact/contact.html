@@ -1,69 +1,74 @@
 {% extends "base.html" %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container-fluid header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid mt-4">
-        <div class="overlay"></div>
-        <!-- Header -->
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <hr>
-                <h2 class="logo-font mb-4 text-full text-center">Contact the Gallery</h2>
-                <hr>
-            </div>
+<div class="container-fluid mt-4">
+    <div class="overlay"></div>
+    <!-- Header -->
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <hr>
+            <h2 class="logo-font mb-4 text-full text-center">Contact the Gallery</h2>
+            <hr>
         </div>
+    </div>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
+    <div class="row justify-content-center">
+        <div class="col-12 ">
+            <!-- Form -->
+            <div class="jumbotron bg-clear mt-4 wrap-contact">
                 <!-- Form -->
-                <div class="jumbotron bg-clear mt-4 wrap-contact">
-                    <!-- Form -->
-                    <form action="{% url 'contact' %}" method="POST" id="contact-form">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col">
-                                {{ contact_form.first_name | as_crispy_field }}
-                            </div>
-                            <div class="col">
-                                {{ contact_form.last_name | as_crispy_field }}
-                            </div>
+                <form action="{% url 'contact' %}" method="POST" id="contact-form">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col">
+                            {{ contact_form.first_name | as_crispy_field }}
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                {{ contact_form.email | as_crispy_field }}
-                            </div>
-                            <div class="col">
-                                {{ contact_form.phone_number | as_crispy_field }}
-                            </div>
+                        <div class="col">
+                            {{ contact_form.last_name | as_crispy_field }}
                         </div>
-                        {{ contact_form.subject | as_crispy_field }}
-                        {{ contact_form.your_message | as_crispy_field }}
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            {{ contact_form.email | as_crispy_field }}
+                        </div>
+                        <div class="col">
+                            {{ contact_form.phone_number | as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ contact_form.subject | as_crispy_field }}
+                    {{ contact_form.your_message | as_crispy_field }}
 
-                        <!-- Button -->
-                        <div class="row justify-content-center mt-3 mx-auto">
-                            <div class="mx-auto">                 
-                                <button id="submit-button" class="btn border bg-white mt-3 w-sm-auto"> 
-                                    <span>Send Message</span>
-                                </button>
-                            </div>
+                    <!-- Button -->
+                    <div class="row justify-content-center mt-3 mx-auto">
+                        <div class="mx-auto">
+                            <button id="submit-button" class="btn border bg-white mt-3 w-sm-auto">
+                                <span>Send Message</span>
+                            </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
 <script type="text/javascript">
-    gsap.from(".wrap-contact", { opacity: 0, duration: 1, delay: 1.5, x: -100 });
+    gsap.from(".wrap-contact", {
+        opacity: 0,
+        duration: 1,
+        delay: 1.5,
+        x: -100
+    });
 </script>
 {% endblock %}
