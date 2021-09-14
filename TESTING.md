@@ -96,7 +96,9 @@ Admin and super user can log into the site or visit the admin page to use CRUD o
 Secure payment
 
 * Expected: user can log in credit card details to secure a payment 
-* Testing: User completes checkout funnel and adds payment with false card 42424242424242 424 4242. Payment is successful and email is sent. Checked webhooks in stripe and they are successful. Checked webhook success on![stripe](readme/webook.png)
+* Testing: User completes checkout funnel and adds payment with false card 42424242424242 424 4242. Payment is successful and email is sent. Checked webhooks in stripe and they are successful. Checked webhook success on
+
+![stripe](readme/webhook-success.png)
 * Result: functioning and secure payment method
 
 
