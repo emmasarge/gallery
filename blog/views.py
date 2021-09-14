@@ -41,7 +41,6 @@ def blog_detail(request, blogpost_id):
     context = {
         'blogpost': blogpost,
         'comments': comments,
-        'blogpost': blogpost,
     }
 
     return render(request, 'blog/blog_detail.html', context)
@@ -253,5 +252,4 @@ def edit_comment(request, comment_id):
     else:
         messages.error(request, 'You cannot do that !')
         return redirect(reverse('blog'))
-    
-    
+

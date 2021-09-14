@@ -15,4 +15,3 @@ class ContactForm(forms.ModelForm):
             'subject',
             'your_message',
             )
-        
