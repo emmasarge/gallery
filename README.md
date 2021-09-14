@@ -2,7 +2,7 @@
 ---
 [**View the full project here**](https://the-gallery-project.herokuapp.com/)
 
-![Site](readme/product-page.png)
+![Site](readme/gallery-desktop.png)
 
 ## Contents ##
 ---
@@ -14,6 +14,7 @@
     * [Scope](#scope)
     * [Structure](#structure)
     * [Wireframes](#wireframes)
+    * [DataBase Schema](#schema)
     * [Design](#design)
         * [Colors](#colors)
         * [Fonts](#fonts)
@@ -45,7 +46,7 @@ I looked at a number of portfolio and gallery sites, including the one I made wi
 <a name="user-stories"></a>
 ### User Stories ###
 
-I used the Boutique Ado as a reference, I followed the user stories in a Google Docs spreadsheet.
+I used the Boutique Ado as a reference, I followed the user stories shared and created one in a Google Docs spreadsheet.
 [Click here to view](https://docs.google.com/spreadsheets/d/1_1PLjGptzSAbOWP1vXC1fD3hp-4bqpj3bSi4dvUwiF0/edit#gid=0)
 
 <a name="strategy"></a>
@@ -103,6 +104,14 @@ Wireframe were created with [**Balsamiq**](https://balsamiq.com/).
 * The wireframe are brief stuctures of the site in initial steps of development.
 
 
+<a name="schema"></a>
+
+### Schema ###
+
+* Using my python models, I put together a schema, an outline of the database and how it engages with each app to run the program from the backend. You will see how a user will log in and their journey to check out, read and comment on a block and more. 
+
+[Click here to see the schema](readme/gallery-db.pdf)
+
 <a name="design"></a>
 
 ### Design ###
@@ -115,7 +124,10 @@ The intent was to create contemporary and simply e-commerce site that looks like
 
 * I used a very muted it palette to reflect on the serenity of a gallery space with soft white walls, very minimalistic. This also helps to draw attention to the products, the paintings and drawings
 
-The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21 for a warm mustard color like sunlight.
+The colors I used were :
+* #fafafa for an off white, 
+* #212529 a soft gray 
+* #f2ba21 for a warm mustard color like sunlight.
 
 <a name="fonts"></a>
 
@@ -196,13 +208,12 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
 * Product tabs filter product type
 
 **Home App**
-
+[see here](readme/homepage.png)
 
 * This page is a simply welcome page with a hero immage
 * There is also a CTA to go to the collection of products
 
 **Cart App**
-
 
 * This app allows users to add/adjust/delete products to their cart and view the total price and product details
 * When a product is added, a preview of the shopping bag is displayed in a toast and the total price/shipping price is updated.
@@ -283,7 +294,7 @@ The colors I used were #fafafa for an off white, #212529 a soft gray and #f2ba21
 * Email queries are stored on database
 * Visitor can be a guest or have an account to use the contact form.
 
-All features have been manually tested, [**please click here to access the testing document**](TESTING.md)
+All features have been manually tested, [please click here for Testing](TESTING.md)
 
 <a name="future"></a>
 
@@ -292,6 +303,8 @@ All features have been manually tested, [**please click here to access the testi
 * I would like to add a bigger art database
 * Create more complex price structure to order prints of various sizes and prices.
 * I would like to apply more animation.
+* Provide options for made-to-order prints
+* Fix some styling
 
 ## Deployment ##
 ---
@@ -507,5 +520,5 @@ All products are my personal paintings.
 **Extra credits to:**
 
 * The Slack Community and CI tutors
-
+* HARRY DHILLON who really helped me and was so generous with his time. 
 
